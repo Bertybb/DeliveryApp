@@ -28,14 +28,13 @@ public class Login extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        LoginButton();
     }
 
-    public void LoginButton(){
+        public void LoginButton(){
         username = (EditText)findViewById(R.id.input_email);
         password = (EditText)findViewById(R.id.input_password);
         login_button = (Button)findViewById(R.id.btn_login);
-
-        attempt.setText(Integer.toString(attempt_counter));
 
         login_button.setOnClickListener(
                 new View.OnClickListener() {
@@ -52,10 +51,7 @@ public class Login extends AppCompatActivity {
                         else {
                             Toast.makeText(Login.this,"Username and password is NOT correct",
                                     Toast.LENGTH_SHORT).show();
-                            attempt_counter--;
-                            attempt.setText(Integer.toString(attempt_counter));
-                            if(attempt_counter==0)
-                                login_button.setEnabled(false);
+                                login_button.setEnabled(true);
                         }
                     }
                 }

@@ -10,4 +10,28 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.ets.gti710.deliveryapp.InitialPage">
 
+    <TextView
+        android:text="Bienvenue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:id="@+id/welcomView"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:background="@android:color/holo_blue_light"
+        android:width="@dimen/activity_horizontal_margin" />
+
+    <Button
+        android:text="Liste des commandes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginBottom="151dp"
+        android:id="@+id/button"
+        android:textSize="@dimen/activity_horizontal_margin"
+        android:textStyle="normal|bold" />
 </RelativeLayout>
